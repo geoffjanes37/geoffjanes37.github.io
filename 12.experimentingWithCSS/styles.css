@@ -1,0 +1,30 @@
+/* Full-page background image styling with upper part focus */
+.full-page-image {
+    background-image: url('images/daredevil.jpg'); /* Path to the image */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: top; /* Show more of the upper part of the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    position: relative;
+}
+
+/* Overlay text box styling */
+.overlay-text {
+    position: absolute;
+    font-size: 64px;
+    background-color: #DBAC1E;
+    left: 397px;
+    bottom: 134px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border-radius: 5px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    right: 397px;
+}
+.full-page-image .overlay-text {
+}
+.full-page-image .overlay-text {
+}

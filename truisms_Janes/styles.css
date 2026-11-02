@@ -1,0 +1,98 @@
+
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the body to cover the entire screen */
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Full-screen video styling */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Video switching controls */
+.video-controls {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+
+/* Individual video buttons */
+.video-button {
+    background-color: #FFD900;
+    color: #000000;
+    border: 3px solid #000000;
+    border-radius: 0;
+    padding: 10px 18px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Highlight the currently selected video */
+.video-button.active {
+    background-color: #000000;
+    color: #FFD900;
+    border-color: #FFD900;
+}
+
+/* Hover effect */
+.video-button:hover {
+    opacity: 0.8;
+}
+
+/* Comic-book-style text box */
+.text-box {
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #FFD900;
+    color: #000000;
+
+    border: 4px solid #000000;
+    border-radius: 0;
+
+    padding: 20px 30px;
+
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+
+    max-width: 85%;
+    width: max-content;
+
+    z-index: 1;
+}
+
+/* Make the quote box feel clickable */
+.text-box {
+    cursor: pointer;
+}
+
+/* Show keyboard focus */
+.text-box:focus-visible {
+    outline: 3px dashed #FFD900;
+    outline-offset: 5px;
+}
